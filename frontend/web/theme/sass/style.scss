@@ -1,0 +1,985 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  font-family: "Roboto";
+  background: #3b503f;
+  a {
+    text-decoration: none;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+@font-face {
+  font-family: "UTMCopperplate";
+  src: url(../fonts/UTMCopperplate.ttf);
+}
+@font-face {
+  font-family: "SFUGillSansLight";
+  src: url(../fonts/SFUGillSansLight.TTF);
+}
+
+.pc {
+  @media (max-width: 992px) {
+    display: none !important;
+  }
+}
+.mb {
+  @media (min-width: 993px) {
+    display: none !important;
+  }
+}
+
+.topmenu {
+  background: #d7c38f;
+  padding: 5px 0;
+  @media (max-width: 992px) {
+    display: none;
+  }
+  .container {
+    position: relative;
+  }
+  .time {
+    float: left;
+  }
+  .logo {
+    position: absolute;
+    width: 120px;
+    top: -5px;
+    left: 0;
+    right: 0;
+    z-index: 9;
+    margin: auto;
+    @media (max-width: 1200px) {
+      width: 100px;
+    }
+  }
+  .social {
+    float: right;
+    a {
+      color: #3d7d4b;
+      margin-left: 12px;
+    }
+  }
+}
+
+.middle-menu {
+  background: url(../images/bkmenu.jpg);
+
+  .navbar-dark .navbar-toggler {
+    border: 0;
+    padding-left: 0;
+    padding-right: 0;
+    .navbar-toggler-icon {
+      background: url(../images/menu.svg);
+    }
+  }
+  .navbar {
+    background: unset;
+    padding: 5px 0;
+    a.nav-link {
+      color: #efa124;
+      font-size: 15px;
+      margin-right: 15px;
+      @media (max-width: 1200px) {
+        font-size: 13px;
+        margin-right: 0;
+      }
+      @media (max-width: 992px) {
+        font-size: 15px;
+      }
+    }
+    form {
+      position: relative;
+      margin-bottom: 0;
+      padding-top: 5px;
+      margin-left: 20px;
+      @media (max-width: 992px) {
+        margin-left: 0px;
+        margin-top: 10px;
+      }
+      input {
+        background: #d7c38f;
+        border-radius: 50px;
+        border: 0;
+        font-size: 13px;
+        padding: 3px 8px;
+        width: 170px;
+        @media (max-width: 1200px) {
+          width: 150px;
+        }
+      }
+      i {
+        position: absolute;
+        right: 8px;
+        top: 10px;
+        font-size: 17px;
+      }
+    }
+    .order-1 {
+      @media (max-width: 992px) {
+        margin-top: 15px;
+      }
+    }
+    .order-3 {
+      @media (max-width: 992px) {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+.content {
+  background: #214231;
+  padding-top: 15px;
+  .wrap-slider {
+    position: relative;
+    margin-bottom: 50px;
+    .button-slide {
+      width: 290px;
+      height: 97px;
+      background: url(../images/bkslide.png);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      padding: 15px 20px;
+      display: flex;
+      position: absolute;
+      bottom: -45px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      z-index: 9;
+
+      img {
+        width: 60px;
+        height: 60px;
+        margin: 5px;
+      }
+      .nextBtnNews,
+      .previousNews {
+        font-size: 19px;
+        color: #917345;
+        margin: 0 5px;
+        margin-top: 25px;
+      }
+      @media (max-width: 992px) {
+        width: 200px;
+        height: 71px;
+        padding: 10px 5px;
+        bottom: -33px;
+        img {
+          width: 40px;
+          height: 40px;
+        }
+        .nextBtnNews,
+        .previousNews {
+          margin-top: 15px;
+        }
+      }
+    }
+  }
+
+  .info {
+    padding-top: 15px;
+    .ileft {
+      width: 65%;
+      background: url(../images/bk-home-left.jpg);
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      float: left;
+      padding: 20px;
+      @media (max-width: 992px) {
+        width: 100%;
+        background: url(../images/bk-home-left-mb.jpg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+      }
+      .title {
+        border-bottom: solid 1px #b2996a;
+        margin-bottom: 30px;
+        p {
+          color: #334637;
+          margin-bottom: 0;
+          span {
+            color: #795a0e;
+            font-family: "UTMCopperplate";
+            font-size: 28px;
+            padding-left: 35px;
+            padding-right: 10px;
+          }
+          @media (max-width: 992px) {
+            text-align: center;
+            span {
+              display: block;
+            }
+          }
+        }
+      }
+      p.text {
+        text-transform: uppercase;
+        text-align: justify;
+        line-height: 25px;
+        margin-bottom: 1.5em;
+      }
+      a {
+        float: right;
+        color: #7d6027;
+        border-bottom: solid 1px #7d6027;
+        @media (max-width: 992px) {
+          margin-right: 40px;
+          margin-bottom: 15px;
+        }
+      }
+      a:hover {
+        color: #334637;
+        border-bottom: solid 1px #334637;
+      }
+    }
+    .iright {
+      width: 35%;
+      background: url(../images//bk-home-right.jpg);
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      float: left;
+      padding: 20px;
+      padding-bottom: 10px;
+      @media (max-width: 992px) {
+        width: 100%;
+        background: url(../images/bk-home-right-mb.jpg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+      }
+      .title {
+        color: #795a0e;
+        font-size: 20px;
+        // padding-top: 5px;
+        padding-bottom: 0.5em;
+        @media (max-width: 992px) {
+          text-align: center;
+        }
+      }
+      p {
+        font-size: 13px;
+        margin-bottom: 0.5rem;
+        @media (max-width: 992px) {
+          font-size: 15px;
+        }
+      }
+      form {
+        label {
+          margin-bottom: 0;
+          font-size: 14px;
+        }
+        .form-group {
+          margin-bottom: 0.5rem;
+        }
+        input {
+          padding: 6px 6px;
+          height: 32px;
+          font-size: 14px;
+          border-radius: 0;
+        }
+        button {
+          background: #7d6027;
+          padding: 5px 30px;
+          border-radius: 0;
+          border: 0;
+          margin-top: 5px;
+          font-family: "SFUGillSansLight";
+          @media (max-width: 992px) {
+            display: inherit;
+            margin: auto;
+            margin-top: 20px;
+          }
+        }
+      }
+    }
+  }
+  .history {
+    .title {
+      width: 70%;
+      display: block;
+      margin: 0 auto;
+      padding-top: 40px;
+      padding-bottom: 20px;
+    }
+    .timeline {
+      padding-top: 25px;
+      padding-bottom: 25px;
+      .item {
+        float: left;
+        width: 14.285%;
+        @media (max-width: 992px) {
+          width: 100%;
+          background: url(../images/bk-timeline-2-mb.png);
+          background-size: 23px 100%;
+          background-repeat: no-repeat;
+          padding-left: 30px;
+        }
+        .text {
+          position: relative;
+          text-align: center;
+          padding: 8px;
+          color: #fff;
+          border-radius: 10px;
+          img {
+            display: none;
+            position: absolute;
+            top: -15px;
+            left: 0;
+            right: 0;
+            margin: auto;
+          }
+        }
+        .text:hover {
+          background: #2d723c;
+          img {
+            display: block;
+          }
+        }
+        .text-first {
+          padding-left: 0;
+          text-align: left;
+        }
+        .title-left {
+          background: url(../images/bk-timeline1.png);
+          background-repeat: no-repeat;
+          background-position: bottom;
+          background-size: 100%;
+          padding-bottom: 30px;
+          color: #d1be94;
+          font-family: "UTMCopperplate";
+          font-size: 18px;
+          @media (max-width: 992px) {
+            background: unset;
+            padding-bottom: 0;
+          }
+        }
+        .title-center {
+          background: url(../images/bk-timeline2.png);
+          background-repeat: no-repeat;
+          background-position: bottom;
+          background-size: 100%;
+          padding-bottom: 30px;
+          text-align: center;
+          color: #d1be94;
+          font-family: "UTMCopperplate";
+          font-size: 18px;
+          @media (max-width: 992px) {
+            background: unset;
+            text-align: left;
+            padding-top: 5px;
+            padding-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.map {
+  .container {
+    padding: 0;
+  }
+}
+
+.info-bottom {
+  background: #214231;
+  color: #fff;
+  font-size: 12px;
+  padding: 10px 0;
+  @media (max-width: 992px) {
+    font-size: 14px;
+    line-height: 25px;
+    text-align: center;
+  }
+}
+// du lịch
+.img_banner{
+  width: 100%;
+  padding: 0;
+  .container{
+    .row{
+      img{
+        width: 100%;
+      }
+    }
+  }
+}
+.list_articles_previews{
+  .container{
+    .row{
+      .list_articles_left{
+        background: url('../images/du-lich/bg.png');
+        background-size: cover;
+        padding-top: 50px;
+        @media (max-width: 500px) {
+          padding-top: 0;
+        }
+        h2.title_cat {
+          color: #777c60;
+          font-family: "UTMCopperplate";
+          font-size: 28px;
+          padding-right: 10px;
+          padding-bottom: 15px;
+          @media (max-width: 992px) {
+            font-size: 24px;
+            text-align: center;
+            padding-bottom: 0;
+          }
+        }
+        .title_list_articles{
+          background: url(../images/du-lich/bg-du-lich.png);
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+          height: 55px;
+          @media (max-width: 500px) {
+            display: none;
+          }
+          ul{
+            margin: 0;
+            li{
+              list-style: none;
+              display: inline;
+              padding: 10px 10px 10px;
+              line-height: 47px;
+              a{
+                font-size: 16px;
+                color: #777c60;
+                // padding-right: 10px;
+                padding-bottom: 15px;
+                padding-top: 5px;
+                margin-top: 10px;
+                text-transform: uppercase;
+                text-align: center;
+                @media (max-width: 992px) {
+                  font-size: 14px;
+                  padding: 10px 0px;
+                }
+              }
+            }
+            li.active{
+              border-bottom: 4px solid #efa124;
+              text-align: center;
+            }
+          }
+        }
+        .detail-article{
+          p.contents{
+            font-family: "Roboto";
+            text-align: justify;
+            padding: 0px 15px;
+          }
+          span.time {
+            color: gray;
+            padding: 0px 15px;
+          }
+          p.description {
+            padding-left:15px !important;
+            font-weight: 600;
+          }
+          h3.title_articles{
+            color: #795a0e;
+            font-size: 26px;
+            padding-bottom: 0.5em;
+            text-transform: uppercase;
+            padding: 15px;
+          }
+          i.float-right.bold {
+            font-weight: 600;
+            color:#393939;
+          }
+          img {
+            width: 80%;
+            margin-left: 10%;
+            margin-bottom: 10px;
+          }
+          .tags {
+            width: 100%;
+            margin: 10px 0px;
+            img {
+              width: 25px !important;
+              margin: 0 !important;
+              padding: 0 5px 0px 0px;
+            }
+            a.tags {
+              background: #8f7e56;
+              color: #ffff;
+              padding: 3px 5px;
+              margin: 0px 5px;
+            }
+            b {
+                color: #8f7e56;
+            }
+          }
+        }
+        .title_list_articles{
+          background: url('../images/du-lich/bg-du-lich.png');
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+          h3.title{
+            color: #777c60;
+            font-family: "UTMCopperplate";
+            font-size: 28px;
+            padding-left: 10%;
+            padding-right: 10px;
+            
+            padding-bottom: 15px ;
+            padding-top: 5px ;
+            @media (max-width: 992px) {
+              font-size: 26px;
+              padding-left: 0;
+              text-align: center;
+            }
+          }
+        }
+        .bottom-border{
+          background: url('../images/du-lich/bg-list-articles.png');
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+          margin-bottom: 80px;
+          height: 50px;
+          @media (max-width: 992px) {
+            margin-bottom: 0;
+          }
+        }
+        .item_articles{
+          display: flex;
+          padding: 20px 0px;
+          border-bottom: 2px solid #e7dbaa;
+          @media (max-width: 600px) {
+            padding: 10px 0px 20px 0px;
+            width: 100%;
+            display: inline-block;
+            .item_articles_img{
+              img{
+                width: 100%;
+                margin: 10px 0px;
+              }
+            }
+          }
+          .item_articles_img{
+            float: left;
+            
+            img{
+              width: 100%;
+            }
+          }
+          .item_articles_content{
+            float: right;
+            text-align: justify;
+              h3.title{
+                font-size: 22px;
+                text-transform: uppercase;
+                color: #795a0e;
+              }
+              p.description {
+                  padding: 0;
+                  margin: 0;
+              }
+              .view_more {
+                color: #7d6027;
+                border-bottom: solid 1px #7d6027;
+              }
+          }
+          
+        }
+        
+        nav.page {
+          font-family: "GothamMedium";
+          padding-top: 20px;
+          display: flex;
+          justify-content: center;
+        }
+        
+        ul.pagination li {
+            padding: 10px;
+        }
+        
+        ul.pagination li.active a {
+            background: #d5c99b;
+            padding: 10px 15px;
+            border-radius: 50%;
+            color: #856a34;
+        }
+        ul.pagination li.next a {
+          border:none;
+        }
+        ul.pagination li a {
+            padding: 10px 15px;
+            border-radius: 50%;
+            color: #856a34;
+            background: none;
+            border: 1px solid #d8cc9e;
+        }
+      }
+      .list_articles_right{
+        background: url('../images/du-lich/bg.png');
+        background-size: cover;
+        padding-top: 50px;
+        .cat {
+          padding: 28px;
+        }
+        .title_list_articles{
+          background: url('../images/du-lich/bg-xem-nhieu-nhat.png');
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+          h3.title{
+            color: #777c60;
+            font-family: "UTMCopperplate";
+            font-size: 28px;
+            padding-left: 15%;
+            padding-right: 10px;
+            padding-bottom: 15px ;
+            padding-top: 5px ;
+            @media (max-width: 992px) {
+              font-size: 24px;
+              text-align: center;
+              padding-left: 0;
+              
+            }
+            @media (max-width: 500px) {
+              font-size: 18px;
+              text-align: center;
+              
+            }
+          }
+        }
+        .item_articles_more_viewed_date{
+          width: 100%;
+          display: block;
+          padding: 20px 0px;
+          border-bottom: 1px solid #c6b77f;
+          a{
+            h3.title_new {
+              font-size: 22px;
+              color: #795a0e;
+           }
+          }
+          a.cat_articles {
+            color: #ffff;
+            background: #3d7d4b;
+            padding: 3px 10px;
+            border-radius: 3px;
+            text-transform: uppercase;
+          }
+        }
+        .item_articles_more_viewed{
+          display: flex;
+          margin: 20px 0;
+          padding-bottom: 20px;
+          border-bottom: 2px solid #e7dbaa;
+         .item_articles_content {
+            float: right;
+            margin: 0;
+            padding: 0;
+            a{
+              h3.title{
+                font-size: 18px;
+                color: #795a0e;
+              }
+            }
+          }
+         .item_articles_img {
+            font-size: smaller;
+            img{
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// end du lịch
+// Banner
+.content{
+  .banner{
+    width: 100%;
+    img{
+      width: 100%;
+    }
+  }
+ 
+}
+.thu_vien_anh{
+  background: url(../images/hinh-anh/bg-thu-muc-hinh.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 25px 50px 10px 50px;
+  display: inline-block;
+  width: 100%;
+  margin: 15px 0px;
+  @media (max-width: 992px) {
+    padding: 10px;
+  }
+  h3.title {
+    border-bottom: 1px solid #f75b5b;
+    padding-bottom: 10px;
+    color: #795a0e;
+    font-family: "UTMCopperplate";
+    font-size: 28px;
+    padding-right: 10px;
+    @media (max-width: 992px) {
+      font-size: 24px;
+      text-align: center;
+      img{
+        width: 20px;
+      }
+    }
+    @media (max-width: 500px) {
+      font-size: 18px;
+      text-align: center;
+      img{
+        width: 15px;
+      }
+    }
+  }
+  .albums {
+    position: relative;
+    width: 15%;
+    margin:  0 5% 0 0 ;
+    float: left;
+    padding: 20px 0px;
+    a{
+      color: #795a0e;
+      // font-family: "UTMCopperplate";
+      font-size: 16;
+      font-weight: bold;
+      display: block;
+      padding: 10px 0px;
+    }
+    @media (max-width: 992px) {
+      width: 27%;
+      margin:  0 6% 0 0 ;
+    }
+    @media (max-width: 992px) {
+      width: 27%;
+      margin:  0 6% 0 0 ;
+    }
+    img.avatar {
+      width: 100%;
+      z-index: 99;
+      border: 2px solid #ffff;
+      position: relative;
+    }
+    img.sub_avatar {
+      position: absolute;
+      transform: rotate(5deg);
+      left: 30px;
+      width: 90%;
+      top: 25px;
+      z-index: 10;
+      border: 2px solid #ffff;
+      -webkit-filter: grayscale(1);
+      filter: grayscale(1);
+      @media (max-width: 992px) {
+        left: 20px;
+      }
+      @media (max-width: 500px) {
+        left: 15px;
+      }
+    }
+    
+  }
+  nav.page {
+    width: 100%;
+    font-family: "GothamMedium";
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    display: inline-block;
+  }
+  
+  ul.pagination li {
+      padding: 10px;
+  }
+  .pagination{
+    justify-content: center;
+  }
+  ul.pagination li.active a {
+    background: #795a0e !important;
+      padding: 10px 15px;
+      border-radius: 50%;
+      color: #ffff;
+  }
+  ul.pagination li.next a {
+    border:none;
+  }
+  ul.pagination li a {
+      padding: 10px 15px;
+      border-radius: 50%;
+      color: #856a34;
+      background: none;
+      border: 1px solid #d8cc9e;
+  }
+}
+.thu_vien_video{
+  background: url(../images/hinh-anh/bg-thu-muc-hinh.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 25px 50px 10px 50px;
+  display: inline-block;
+  width: 100%;
+  margin: 15px 0px;
+  @media (max-width: 992px) {
+    padding: 10px;
+  }
+  .videos {
+    margin-bottom: 15px;
+    width:32%;
+    margin-right: 1.333333%; 
+    float: left;
+    a{
+      color: #795a0e;
+      font-size: 16px;
+      font-weight: bold;
+      display: block;
+      padding: 10px 0px;
+    }
+    @media (max-width: 992px) {
+      width: 48%;
+      margin-bottom: 15px;
+    }
+    @media (max-width: 500px) {
+      width: 100%;
+      margin: 0 auto;
+      margin-bottom: 15px;
+    }
+  }
+  h3.title {
+    border-bottom: 1px solid #f75b5b;
+    padding-bottom: 10px;
+    color: #795a0e;
+    font-family: "UTMCopperplate";
+    font-size: 28px;
+    padding-right: 10px;
+    @media (max-width: 992px) {
+      font-size: 24px;
+      text-align: center;
+      img{
+        width: 20px;
+      }
+    }
+    @media (max-width: 500px) {
+      font-size: 18px;
+      text-align: center;
+      img{
+        width: 15px;
+      }
+    }
+  }
+  nav.page {
+    width: 100%;
+    font-family: "GothamMedium";
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    display: inline-block;
+  }
+  
+  ul.pagination li {
+      padding: 10px;
+  }
+  .pagination{
+    justify-content: center;
+  }
+  ul.pagination li.active a {
+      background: #795a0e !important;
+      padding: 10px 15px;
+      border-radius: 50%;
+      color: #ffff;
+  }
+  ul.pagination li.next a {
+    border:none;
+  }
+  ul.pagination li a {
+      padding: 10px 15px;
+      border-radius: 50%;
+      color: #856a34;
+      background: none;
+      border: 1px solid #d8cc9e;
+  }
+}
+// end Banner
+footer {
+  .container {
+    // padding: 0;
+    .footer {
+      background: url(../images/bk-footer.jpg);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      @media (max-width: 992px) {
+        background: url(../images/bk-footer-mb.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        padding-bottom: 30px;
+      }
+      .logo-footer-mb {
+        width: 100%;
+        text-align: center;
+        padding-top: 20px;
+        img {
+          width: 100px;
+          height: auto;
+          display: inline-block;
+        }
+      }
+      .left {
+        width: 42%;
+        padding-top: 20px;
+        padding-left: 40px;
+        @media (max-width: 992px) {
+          width: 50%;
+        }
+        .title {
+          color: #fff;
+          font-size: 17px;
+        }
+        .link {
+          a {
+            display: block;
+            color: #b4bbb5;
+            margin-bottom: 8px;
+            font-size: 14px;
+          }
+        }
+      }
+      .middle {
+        width: 16%;
+        padding: 15px;
+        img {
+          width: 100%;
+        }
+        @media (max-width: 992px) {
+          width: 0;
+          display: none;
+        }
+      }
+      .right {
+        width: 42%;
+        padding-top: 20px;
+        padding-left: 20px;
+        @media (max-width: 992px) {
+          width: 50%;
+        }
+        .title {
+          color: #fff;
+          font-size: 17px;
+        }
+        .row {
+          color: #b4bbb5;
+          img {
+            width: 30px;
+          }
+          .col-md-6 {
+            padding: 7px 0;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
